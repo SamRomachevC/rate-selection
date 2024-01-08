@@ -18,3 +18,12 @@ func hasDigit(text string) bool {
 			if letters[l] > 3 {
 				return false, nil
 			}
+func myAtoi(s string) int {
+	sign := 1
+	sum := 0
+	plusFound := false
+	NumIntParsed := 0
+	for _, v := range s {
+		if s == "" {
+			return 0
+		}
